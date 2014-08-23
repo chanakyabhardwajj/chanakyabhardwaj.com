@@ -108,74 +108,38 @@ hr {
     padding: 0;
 }
 
+.row{
+    margin: 0 !important;
+}
+
 /*---------------------------------------------------
 	3.1 Topbar
 ---------------------------------------------------*/
 
-#section-topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-    overflow: visible;
-    font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#section-topbar a {
-    color: #fff;
-}
-
-#topbar-inner {
-    background: #2f2f2f;
-    line-height: 0;
-    text-align: center;
-}
-
-/*
-	Top Bar
-
-	By default, top navigation bar uses "fixed" position
-*/
-#section-topbar ul#nav {
-    display: inline-block;
-    position: relative;
+.navbar{
+    color: white !important;
+    font-weight: bold;
+    border-radius: 0;
     margin: 0;
-    padding: 0;
-    /* For IE, the outcast */
-    zoom: 1;
-    *display: inline;
 }
 
-#section-topbar ul#nav > li {
-    display: block;
-    float: left;
-    padding: 0;
+.navbar-nav .menu-item a {
+    color: white;
 }
 
-#section-topbar ul#nav a {
-    display: block;
-    font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    padding: 18px 20px 18px 20px;
-    font-size: 14px;
-}
+@media (min-width: 768px) {
+    .navbar{
+        position: fixed;
+        width: 100%;
+        background: rgba(255,255,255,0.9);
+        text-align: center;
+    }
 
-#section-topbar ul#nav a:hover {
-    background: #222;
-    text-decoration: none;
-}
-
-#section-topbar ul#nav .active a {
-    background: #44bbaa;
-}
-
-#section-topbar ul#nav .active a:hover {
-    background: #44bbaa;
-}
-
-#section-topbar i {
-    font-size: 25px;
+    #nav{
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+    }
 }
 
 /*---------------------------------------------------
@@ -186,7 +150,7 @@ hr {
 #headerwrap {
     background: url(../img/header-bg.jpg) no-repeat center top;
     background-size: cover;
-    margin-top: 54px;
+    /*margin-top: 54px;*/
     padding-top: 140px;
     text-align: center;
     background-attachment: relative;
@@ -205,8 +169,8 @@ hr {
     background-size: cover;
 }
 
-#headerwrap h1 {
-    font-size: 80px;
+#headerwrap h2 {
+    font-weight: bold;
     color: white;
 }
 
