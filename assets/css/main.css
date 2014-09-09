@@ -8,6 +8,14 @@
 
 /* Global Values */
 
+.white {
+    color:white;
+}
+
+.justify{
+    text-align: justify;
+}
+
 .desc {
     padding-top: 50px;
 }
@@ -116,6 +124,11 @@ hr {
     margin: 0 !important;
 }
 
+.sectionDarkBlue{
+    background: #2c3e50;
+    color: white;
+}
+
 /*---------------------------------------------------
 	3.1 Topbar
 ---------------------------------------------------*/
@@ -183,21 +196,23 @@ hr {
 }
 
 #headerwrap h3 {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     color: white;
 }
 
 /* Intnro Wrap */
 
 #intro {
-    background: #2c3e50;
+    /*background: #2c3e50;
+    color: white;*/
     padding-top: 60px;
     padding-bottom: 60px;
-    color: white;
+    
 }
 
 #intro h5, #intro p {
-    color: white;
+    /*color: white;*/
 }
 
 #intro i {
@@ -229,6 +244,26 @@ hr {
 
 #projects .desc more {
     color: #ffffff;
+    text-align: justify;
+}
+
+#projects .projectTitle{
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#projects sm{
+    color: white;
+}
+
+#projects hr{
+    border-top: 1px solid #666;
+}
+
+#projects a img{
+    margin-top: 10px;
 }
 
 #skillswrap {
@@ -238,6 +273,22 @@ hr {
 
 #experience h3, #experience h5, #experience p {
     color: #2f2f2f;
+}
+
+#education {
+    background: #2c3e50;
+}
+
+#education h3, #education h5, #education p {
+    color: white;
+}
+
+#education .desc p, #education .desc t {
+    color: #ffffff;
+}
+
+#education .desc more {
+    color: #ffffff;
 }
 
 #skillswrap h5 {
