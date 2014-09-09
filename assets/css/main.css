@@ -43,13 +43,17 @@ sm {
     text-decoration: line-through;
 }
 
+html{
+    height:100%;
+}
+
 body {
     background-color: #f2f2f2;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
     color: #555;
-
+    height:100%;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
@@ -145,7 +149,11 @@ hr {
 /*---------------------------------------------------
 	SECTION WRAPS
 ---------------------------------------------------*/
-
+#header{
+    min-height:100%;
+    width:inherit;
+    height:inherit;
+}
 /* Header Wrap */
 #headerwrap {
     background: url(../img/header-bg.jpg) no-repeat center top;
@@ -155,7 +163,7 @@ hr {
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 800px;
+    
     width: 100%;
 
     -webkit-background-size: 100%;
