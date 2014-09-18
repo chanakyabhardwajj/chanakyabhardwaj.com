@@ -328,6 +328,31 @@ hr {
     font-size: 22px;
 }
 
+#spacer{
+    min-height:100%;
+    width:inherit;
+    height:inherit;
+
+    background: url(../img/me.png) no-repeat center top;
+    background-size: contain;
+
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height:100%;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
 /* Copyright Wrap */
 
 #c {
