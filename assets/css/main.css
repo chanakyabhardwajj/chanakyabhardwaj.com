@@ -129,26 +129,39 @@ hr {
 	3.1 Topbar
 ---------------------------------------------------*/
 
-.navbar{
+.navbar {
     color: white !important;
+    background-color: #f2f2f2;
     font-weight: bold;
     border-radius: 0;
     margin: 0;
 }
 
-.navbar-nav .menu-item a {
-    color: white;
+.navbar #navigationbarToggler {
+    border: none;
+}
+
+.navbar #navigationbarToggler .icon-bar {
+    background-color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #333;
 }
 
 @media (min-width: 768px) {
-    .navbar{
+    .navbar-default .navbar-nav > li > a {
+        color: #777;
+    }
+
+    .navbar {
         position: fixed;
         width: 100%;
         background: rgba(255,255,255,0.9);
         text-align: center;
     }
 
-    #nav{
+    #nav {
         display: inline-block;
         margin: 0 auto;
         float: none;
@@ -189,12 +202,14 @@ hr {
 #headerwrap h2 {
     font-weight: bold;
     color: white;
+    text-shadow: black 2px 2px 2px;
 }
 
 #headerwrap h3 {
     font-size: 16px;
     font-weight: bold;
     color: white;
+    text-shadow: black 2px 1px 1px;
 }
 
 /* Intnro Wrap */
@@ -328,25 +343,15 @@ hr {
     min-height:100%;
     width:inherit;
     height:inherit;
-
-    background: url(../img/me.png) no-repeat center top;
-    background-size: contain;
-
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
     min-height:100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+#spacer img {
+    max-width: 40%;
 }
 
 /* Copyright Wrap */
